@@ -1,5 +1,7 @@
 # Whiteboard: A Kotlin (and Compose) Multiplatform demo
- 
+
+ ![Untitled](https://user-images.githubusercontent.com/7846263/182958297-3da12c00-b8a3-41e6-bf20-243381d5bf51.gif)
+
 ## Modules
 
 - `common-core`
