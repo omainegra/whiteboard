@@ -27,7 +27,7 @@ public interface Api {
   }
 }
 
-internal class ApiImpl(private val host: String = "10.0.0.18", private val port: Int = 8080) : Api {
+internal class ApiImpl(private val host: String = host(), private val port: Int = 8080) : Api {
 
   private val client = httpClient {
     install(ContentNegotiation) {
@@ -63,3 +63,5 @@ internal class ApiImpl(private val host: String = "10.0.0.18", private val port:
     }
   }
 }
+
+private fun host(): String = TODO("Replace with ip address where server is running (e.g. 10.0.0.2)")
